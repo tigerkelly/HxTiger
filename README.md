@@ -1,0 +1,33 @@
+# HxTiger
+
+A hex editor and viewer program for any size file.
+
+This program is different from other Hex Editor programs in the following ways:
+
+	- Does not load the complete file into memory before displaying.
+	  * It loads 200 blocks at a time.  This means you can edit/view any size file.
+	- The file is broke up into 16 or 32 byte blocks. Select the block size before opening the file.
+	- The section just above the hex dump area of the page is the navigation section for the file.
+	  + Use the mouse on the slider to select a position in the file.
+	  + Or click on a position in the slider to move to that position.
+	  + Use the arrow keys to increase or decrease the file position by one.
+	  + Use the text field to enter a block number to goto. Press Enter to move.
+	- The number at the end of the slider is the total number of blocks in file.
+	- Right click any line for an edit menu.
+	
+	- The section just below the hex dump area is for searching.
+	- Editing the file is done in real time with the origin file, so any changes made, changes the file directly.
+	- To edit a block, right click it and select 'Edit' from the popup menu.
+	- You can have multiple files open at once.  Each file has its own tab.
+
+To Open a file use the File->Open File menu option or Ctrl-O.
+
+The Search box below the hex dump area is for searching the file and finding all matches.
+The search pattern has to be in 2 digit hex format with a space separator.
+Example: df ff 01 0a
+
+Use Ctrl-Q to close and quit the HxTiger program.
+
+![HxTiger image](src/images/hxtiger.png?raw=true)
+
+I hope you find the programs useful.
